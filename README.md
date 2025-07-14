@@ -3,79 +3,76 @@
 This project builds a supervised machine learning pipeline to classify astronomical sources from the Sloan Digital Sky Survey (SDSS) as Stars, Galaxies, or Quasars based on photometric features. It demonstrates data-intensive astronomy analysis suitable for large surveys, with methods relevant to modern astronomical classification tasks.
 
 ## Project Goals
-Automate the classification of SDSS photometric sources into Star, Galaxy, or Quasar classes.
+-Automate the classification of SDSS photometric sources into Star, Galaxy, or Quasar classes.
 
-Explore the features and distributions of the dataset.
+-Explore the features and distributions of the dataset.
 
-Train multiple machine learning models.
+-Train multiple machine learning models.
 
-Evaluate and compare their performance.
+-Evaluate and compare their performance.
 
-Provide a simple deployment approach for practical classification.
+-Provide a simple deployment approach for practical classification.
 
 ## Dataset
 Source: SDSS photometric catalog
-
-~100,000 objects with 18 features (RA, DEC, magnitudes in u/g/r/i/z, redshift, observation metadata)
-
 Publicly available CSV
 
 ## Key Steps
-Data Cleaning
+#### Data Cleaning
 
-Dropped irrelevant columns (objid, specobjid).
+-Dropped irrelevant columns (objid, specobjid).
 
-Handled class label encoding.
+-Handled class label encoding.
 
-Exploratory Data Analysis (EDA)
+#### Exploratory Data Analysis (EDA)
 
-Visualized class distribution.
+-Visualized class distribution.
 
-Generated pairplots of magnitudes.
+-Generated pairplots of magnitudes.
 
-Correlation heatmap.
+-Correlation heatmap.
 
-Feature Engineering
+#### Feature Engineering
 
-Derived color indices (planned).
+-Derived color indices (planned).
 
-Scaled features with StandardScaler.
+-Scaled features with StandardScaler.
 
-Model Training
+#### Model Training
 
-Decision Tree
+-Decision Tree
 
-Logistic Regression
+-Logistic Regression
 
-K-Nearest Neighbors
+-K-Nearest Neighbors
 
-Random Forest (with hyperparameter tuning)
+-Random Forest (with hyperparameter tuning)
 
-XGBoost
+-XGBoost
 
-SVM
+-SVM
 
-Neural Network (MLP)
+-Neural Network (MLP)
 
-Model Evaluation
+#### Model Evaluation
 
-Classification reports.
+-Classification reports.
 
-Confusion matrices.
+-Confusion matrices.
 
-Comparison of accuracy scores.
+-Comparison of accuracy scores.
 
-Hyperparameter Tuning
+#### Hyperparameter Tuning
 
-Used GridSearchCV to optimize model parameters.
+-Used GridSearchCV to optimize model parameters.
 
-Compared best results across models.
+-Compared best results across models.
 
-Deployment Example
+#### Deployment Example
 
-Built a Streamlit app to predict class from user input.
+-Built a Streamlit app to predict class from user input.
 
-Demonstrates real-time classification using trained model.
+-Demonstrates real-time classification using trained model.
 
 ## Tools & Libraries
 Python (Pandas, NumPy, Matplotlib, Seaborn)
