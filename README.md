@@ -5,13 +5,13 @@ This project builds a supervised machine learning pipeline to classify astronomi
 ## Project Goals
 - Automate the classification of SDSS photometric sources into Star, Galaxy, or Quasar classes.
 
--Explore the features and distributions of the dataset.
+- Explore the features and distributions of the dataset.
 
--Train multiple machine learning models.
+- Train multiple machine learning models.
 
--Evaluate and compare their performance.
+- Evaluate and compare their performance.
 
--Provide a simple deployment approach for practical classification.
+- Provide a simple deployment approach for practical classification.
 
 ## Dataset
 Source: SDSS photometric catalog
@@ -20,93 +20,100 @@ Publicly available CSV
 ## Key Steps
 ### 1. Data Cleaning
 
--Dropped irrelevant columns (objid, specobjid).
+- Dropped irrelevant columns (objid, specobjid).
 
--Handled class label encoding.
+- Handled class label encoding.
 
 ### 2. Exploratory Data Analysis (EDA)
 
--Visualized class distribution.
+- Visualized class distribution.
 
--Generated pairplots of magnitudes.
+- Generated pairplots of magnitudes.
 
--Correlation heatmap.
+- Correlation heatmap.
 
 ### 3. Feature Engineering
 
--Derived color indices (planned).
+- Derived color indices (planned).
 
--Scaled features with StandardScaler.
+- Scaled features with StandardScaler.
 
 ### 4. Model Training
 
--Decision Tree
+- Decision Tree
 
--Logistic Regression
+- Logistic Regression
 
--K-Nearest Neighbors
+- K-Nearest Neighbors
 
--Random Forest (with hyperparameter tuning)
+- Random Forest (with hyperparameter tuning)
 
--XGBoost
+- XGBoost
 
--SVM
+- SVM
 
--Neural Network (MLP)
+- Neural Network (MLP)
 
 ### 5. Model Evaluation
 
--Classification reports.
+- Classification reports.
 
--Confusion matrices.
+- Confusion matrices.
 
--Comparison of accuracy scores.
+- Comparison of accuracy scores.
 
 ### 6. Hyperparameter Tuning
 
--Used GridSearchCV to optimize model parameters.
+- Used GridSearchCV to optimize model parameters.
 
--Compared best results across models.
+- Compared best results across models.
 
 ### 7. Deployment Example
 
--Built a Streamlit app to predict class from user input.
+- Built a Streamlit app to predict class from user input.
 
--Demonstrates real-time classification using trained model.
+- Demonstrates real-time classification using trained model.
 
 ## Tools & Libraries
--Python (Pandas, NumPy, Matplotlib, Seaborn)
+- Python (Pandas, NumPy, Matplotlib, Seaborn)
 
--Scikit-Learn
+- Scikit-Learn
 
--XGBoost
+- XGBoost
 
--Streamlit
+- Streamlit
 
 ## Results
--Best accuracy achieved: ~98.48% with Random Forest on test data.
+- Best accuracy achieved: ~98.48% with Random Forest on test data.
 
--Model comparison plot included.
+- Model comparison plot included.
 
--Streamlit app for practical use.
+- Streamlit app for practical use.
 
 ## How to Use
--Clone the repository.
+- Clone the repository.
 
--Install dependencies (requirements.txt or manual).
+- Install dependencies (requirements.txt or manual).
 
--Run the Jupyter notebook to see full analysis.
+- Run the Jupyter notebook to see full analysis.
 
--Run the Streamlit app-
+- Run the Streamlit app:
+Clone the Repository
+bash
+Copy
+Edit
+git clone https://github.com/yourusername/your-repo.git
+cd your-repo
+
 
 ## Why This Matters
--This project simulates a real data-intensive astronomy workflow:
+- This project simulates a real data-intensive astronomy workflow:
 
--Works with large-scale survey data.
+- Works with large-scale survey data.
 
--Demonstrates classification essential for catalogs like SDSS, LSST.
+- Demonstrates classification essential for catalogs like SDSS, LSST.
 
--Shows end-to-end pipeline development from raw data to deployable app.
+- Shows end-to-end pipeline development from raw data to deployable app.
 
 ## Author
 Radit Raian
