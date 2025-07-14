@@ -97,13 +97,7 @@ Publicly available CSV
 
 - Run the Jupyter notebook to see full analysis.
 
-- Run the Streamlit app:
-Clone the Repository
-bash
-Copy
-Edit
-git clone https://github.com/yourusername/your-repo.git
-cd your-repo
+- Run the Streamlit app
 
 
 ## Why This Matters
