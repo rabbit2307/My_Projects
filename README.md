@@ -1,5 +1,136 @@
-# Machine Learning Projects
-This repository contains a machine learning project focused on classifying astronomical objects (Stars, Galaxies, and Quasars) based on their photometric and spectral features. The project demonstrates a complete workflow from data preprocessing and model training to evaluation and individual sample inference. The primary goal of this project is to build and evaluate various machine learning models capable of accurately classifying celestial objects. The dataset used contains features derived from astronomical observations, such as magnitudes in different filters (u, g, r, i, z), redshift, and observation metadata. 
-<br><br>
-The project aims to provide a clear and reproducible pipeline for this classification task. Features include Data Preprocessing (handling missing values, encoding categorical labels, feature scaling, managing new/unknown data points), Model Training (demonstrating the training of multiple classification algorithms), Model Evaluation (providing comprehensive evaluation metrics including Accuracy Score, Classification Report with Precision, Recall, F1-score for each class, Confusion Matrix visualization, and Prediction Confidence visualization with histograms of maximum probabilities), and Individual Sample Inference (a utility function and examples to classify single, new astronomical objects and display their predicted class and probability distributions). <br><br>
-The project explores the performance of Random Forest Classifier, Support Vector Machine (SVM), XGBoost Classifier, and Multi-layer Perceptron (Neural Network). Repository contents include Predicting Stars, Galaxies & Quasars with ML Model.ipynb (the main Jupyter Notebook), label_encoder.pkl (a serialized LabelEncoder object), scaler.pkl (a serialized StandardScaler object), rf_model.pkl (the trained Random Forest Classifier model), svm_model.pkl (the trained Support Vector Machine model), xgb_sdss_classifier.pkl (the trained XGBoost Classifier model), nn_model.pkl (the trained Neural Network model), Skyserver_12_30_2019_4_49_58_PM.csv (the dataset), and .ipynb_checkpoints/ (Jupyter Notebook's auto-saved checkpoints). To run this project locally, you would clone the repository, create and activate a virtual environment, install dependencies (pandas, numpy, scikit-learn, matplotlib, seaborn, xgboost, and optionally tensorflow/keras), launch Jupyter Notebook, open the main notebook, and run its cells sequentially. For any questions or suggestions, feel free to reach out.
+# Predicting Stars, Galaxies & Quasars with Machine Learning
+
+This project builds a supervised machine learning pipeline to classify astronomical sources from the Sloan Digital Sky Survey (SDSS) as Stars, Galaxies, or Quasars based on photometric features. It demonstrates data-intensive astronomy analysis suitable for large surveys, with methods relevant to modern astronomical classification tasks.
+
+## Project Goals
+Automate the classification of SDSS photometric sources into Star, Galaxy, or Quasar classes.
+
+Explore the features and distributions of the dataset.
+
+Train multiple machine learning models.
+
+Evaluate and compare their performance.
+
+Provide a simple deployment approach for practical classification.
+
+## Dataset
+Source: SDSS photometric catalog
+
+~100,000 objects with 18 features (RA, DEC, magnitudes in u/g/r/i/z, redshift, observation metadata)
+
+Publicly available CSV
+
+## Key Steps
+Data Cleaning
+
+Dropped irrelevant columns (objid, specobjid).
+
+Handled class label encoding.
+
+Exploratory Data Analysis (EDA)
+
+Visualized class distribution.
+
+Generated pairplots of magnitudes.
+
+Correlation heatmap.
+
+Feature Engineering
+
+Derived color indices (planned).
+
+Scaled features with StandardScaler.
+
+Model Training
+
+Decision Tree
+
+Logistic Regression
+
+K-Nearest Neighbors
+
+Random Forest (with hyperparameter tuning)
+
+XGBoost
+
+SVM
+
+Neural Network (MLP)
+
+Model Evaluation
+
+Classification reports.
+
+Confusion matrices.
+
+Comparison of accuracy scores.
+
+Hyperparameter Tuning
+
+Used GridSearchCV to optimize model parameters.
+
+Compared best results across models.
+
+Deployment Example
+
+Built a Streamlit app to predict class from user input.
+
+Demonstrates real-time classification using trained model.
+
+## Tools & Libraries
+Python (Pandas, NumPy, Matplotlib, Seaborn)
+
+Scikit-Learn
+
+XGBoost
+
+Streamlit
+
+Astroquery (for related data access)
+
+SNooPy & Spextractor (for related SN work, not in this notebook but part of research background)
+
+## Results
+Best accuracy achieved: ~98.48% with Random Forest on test data.
+
+Model comparison plot included.
+
+Streamlit app for practical use.
+
+## How to Use
+Clone the repository.
+
+Install dependencies (requirements.txt or manual).
+
+Run the Jupyter notebook to see full analysis.
+
+Run the Streamlit app:
+
+bash
+Copy
+Edit
+streamlit run app.py
+## Why This Matters
+This project simulates a real data-intensive astronomy workflow:
+
+Works with large-scale survey data.
+
+Demonstrates classification essential for catalogs like SDSS, LSST.
+
+Shows end-to-end pipeline development from raw data to deployable app.
+
+## Author
+[Your Name Here]
+
+Undergraduate student passionate about data-intensive astronomy.
+
+## Acknowledgements
+Sloan Digital Sky Survey (SDSS) for the dataset.
+
+Brown Physics AI Winter School for ML training.
+
+Guidance from Dr. Syeda Lammim Ahad, Dr. Andy Howell, Dr. Syed Ashraf Uddin Shuvo.
+
+## License
+For academic demonstration purposes.
+
