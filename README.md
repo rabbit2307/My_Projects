@@ -3,7 +3,7 @@
 This project builds a supervised machine learning pipeline to classify astronomical sources from the Sloan Digital Sky Survey (SDSS) as Stars, Galaxies, or Quasars based on photometric features. It demonstrates data-intensive astronomy analysis suitable for large surveys, with methods relevant to modern astronomical classification tasks.
 
 ## Project Goals
--Automate the classification of SDSS photometric sources into Star, Galaxy, or Quasar classes.
+- Automate the classification of SDSS photometric sources into Star, Galaxy, or Quasar classes.
 
 -Explore the features and distributions of the dataset.
 
@@ -115,8 +115,6 @@ Radit Raian
 Sloan Digital Sky Survey (SDSS) for the dataset.
 
 Brown Physics AI Winter School for ML training.
-
-Guidance from Dr. Syeda Lammim Ahad, Dr. Andy Howell, Dr. Syed Ashraf Uddin Shuvo.
 
 ## License
 For academic demonstration purposes.
