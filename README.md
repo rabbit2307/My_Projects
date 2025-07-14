@@ -18,13 +18,13 @@ Source: SDSS photometric catalog
 Publicly available CSV
 
 ## Key Steps
-#### Data Cleaning
+### 1. Data Cleaning
 
 -Dropped irrelevant columns (objid, specobjid).
 
 -Handled class label encoding.
 
-#### Exploratory Data Analysis (EDA)
+### 2. Exploratory Data Analysis (EDA)
 
 -Visualized class distribution.
 
@@ -32,13 +32,13 @@ Publicly available CSV
 
 -Correlation heatmap.
 
-#### Feature Engineering
+### 3. Feature Engineering
 
 -Derived color indices (planned).
 
 -Scaled features with StandardScaler.
 
-#### Model Training
+### 4. Model Training
 
 -Decision Tree
 
@@ -54,7 +54,7 @@ Publicly available CSV
 
 -Neural Network (MLP)
 
-#### Model Evaluation
+### 5. Model Evaluation
 
 -Classification reports.
 
@@ -62,64 +62,54 @@ Publicly available CSV
 
 -Comparison of accuracy scores.
 
-#### Hyperparameter Tuning
+### 6. Hyperparameter Tuning
 
 -Used GridSearchCV to optimize model parameters.
 
 -Compared best results across models.
 
-#### Deployment Example
+### 7. Deployment Example
 
 -Built a Streamlit app to predict class from user input.
 
 -Demonstrates real-time classification using trained model.
 
 ## Tools & Libraries
-Python (Pandas, NumPy, Matplotlib, Seaborn)
+-Python (Pandas, NumPy, Matplotlib, Seaborn)
 
-Scikit-Learn
+-Scikit-Learn
 
-XGBoost
+-XGBoost
 
-Streamlit
-
-Astroquery (for related data access)
-
-SNooPy & Spextractor (for related SN work, not in this notebook but part of research background)
+-Streamlit
 
 ## Results
-Best accuracy achieved: ~98.48% with Random Forest on test data.
+-Best accuracy achieved: ~98.48% with Random Forest on test data.
 
-Model comparison plot included.
+-Model comparison plot included.
 
-Streamlit app for practical use.
+-Streamlit app for practical use.
 
 ## How to Use
-Clone the repository.
+-Clone the repository.
 
-Install dependencies (requirements.txt or manual).
+-Install dependencies (requirements.txt or manual).
 
-Run the Jupyter notebook to see full analysis.
+-Run the Jupyter notebook to see full analysis.
 
-Run the Streamlit app:
+-Run the Streamlit app-
 
-bash
-Copy
-Edit
-streamlit run app.py
 ## Why This Matters
-This project simulates a real data-intensive astronomy workflow:
+-This project simulates a real data-intensive astronomy workflow:
 
-Works with large-scale survey data.
+-Works with large-scale survey data.
 
-Demonstrates classification essential for catalogs like SDSS, LSST.
+-Demonstrates classification essential for catalogs like SDSS, LSST.
 
-Shows end-to-end pipeline development from raw data to deployable app.
+-Shows end-to-end pipeline development from raw data to deployable app.
 
 ## Author
-[Your Name Here]
-
-Undergraduate student passionate about data-intensive astronomy.
+Radit Raian
 
 ## Acknowledgements
 Sloan Digital Sky Survey (SDSS) for the dataset.
